@@ -1,7 +1,104 @@
-body {
-	background: #C1C1C1;
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
-h1 {
-	text-align: center;
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    background: #C1C1C1;
+    font-family: "Roboto", serif;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+/*--------------------*/
+
+.main {
+    margin: 10px;
+}
+
+.container {
+    padding: 15px 10px;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.title {
+    text-align: center;
+}
+
+.image {
+    display: block;
+    margin: 50px auto;
+    border-radius: 24px;
+    width: 250px;
+    cursor: pointer;
+    transition: transform .2s ease-in-out, width .2s ease-in-out, height .2s ease-in-out;
+}
+
+.no-drag {
+    user-select: none; /* Запрещаем выделение */
+    user-drag: none;   /* Запрещаем перетаскивание */
+    -webkit-user-drag: none; /* Для Safari */
+    -moz-user-drag: none; /* Для старых версий Firefox */
+    -ms-user-drag: none; /* Для старых версий IE */
 }
